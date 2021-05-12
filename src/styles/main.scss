@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Thasadith&display=swap');
+
+body {
+  margin: 5vh 5vw;
+}
+
+h1 {
+  font-family: 'Satisfy', cursive;
+}
+
+h2, a, p {
+  font-family: 'Poiret One', cursive;
+
+  // font-family: 'Julius Sans One', sans-serif;
+}
+
+// p {
+//   font-family: 'Thasadith', sans-serif;
+// }
+
+.homepage-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer {
+  text-align: center;
+  padding: 3vh;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  
+}
