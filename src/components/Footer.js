@@ -1,11 +1,13 @@
 import React from 'react'
+import { FiChevronsUp } from 'react-icons/fi'
 
 const Footer = () => {
 
   return (
-    <div className="footer">
+    <footer>
+      <a href="#nav"><FiChevronsUp /></a>
       <p> &copy; HANNAH TINACCI 2021 </p>
-    </div>
+    </footer>
   )
 }
 

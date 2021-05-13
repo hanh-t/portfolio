@@ -9,11 +9,11 @@ const Contact = () => {
   return (
     <div>
       <h2>Contact</h2>
-      <a href="https://github.com/hannahtinacci" target="blank" > <GitHub /> GitHub</a>
+      <a href="https://github.com/hannahtinacci" target="_blank" rel="noreferrer"> <GitHub /> GitHub</a>
      
       
       
-      <a href="https://www.linkedin.com/in/hannahtinacci/" target="blank" ><Linkedin /> LinkedIn</a>
+      <a href="https://www.linkedin.com/in/hannahtinacci/" target="_blank" rel="noreferrer"><Linkedin /> LinkedIn</a>
       <a href="mailto:hannahtinacci@gmail.com" > <Mail /> Email</a>
     </div>
     

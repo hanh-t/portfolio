@@ -3,8 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Thasadith&display=swap');
 
-body {
-  margin: 5vh 5vw;
+#root {
+  height: 100vh;
+}
+
+body, html {
+  // padding: 5vh 5vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+  margin: 0;
 }
 
 h1 {
@@ -13,21 +20,7 @@ h1 {
 
 h2, a, p {
   font-family: 'Poiret One', cursive;
-
   // font-family: 'Julius Sans One', sans-serif;
-}
-
-// p {
-//   font-family: 'Thasadith', sans-serif;
-// }
-
-.homepage-intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-  
 }
 
 a {
@@ -35,10 +28,330 @@ a {
   color: inherit;
 }
 
-.footer {
+nav {
+  display: flex;
+  justify-content: center;
+  a {
+    padding: 0 10px;
+    margin-top: 1vh;
+  }
+}
+// p {
+//   font-family: 'Thasadith', sans-serif;
+// }
+
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  // top: 50vh;
+  // left: 50vw;
+  
+}
+
+.hero-arrow-down {
+  text-align: center;
+  a {
+    bottom: 12vh;
+    position: absolute;
+   
+  }
+}
+
+
+
+// 
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+
+$colorBg:  #ffffff;
+$colorOutline: #222a30; 
+$colorOutlineFade: #4e5559;
+
+$widthMouse: 52px;
+$heightMouse: 88px;
+$borderMouse: 6px;
+
+$posMouse: 8px;
+$posText: 2px;
+
+$sizeTrackball: 10px;
+$posTrackball: 20px;
+$shrinkTrackball: 0.4;
+
+$animDuration: 5s;
+
+.mouse-container {
+  display: flex;
+  justify-content: center;
+  p {
+    margin-top: 50px;
+    font-family: "Cabin", sans-serif;
+    letter-spacing: 12px;
+    text-indent: 12px;
+    color: $colorOutline;
+    animation: 
+      colorText $animDuration ease-out 5s,
+      nudgeText $animDuration ease-out 5s;
+  }
+}
+
+
+
+@mixin bgGradient {
+  background:
+    $colorOutlineFade
+    linear-gradient(
+      transparent 0%,
+      transparent 50%,
+      $colorOutline 50%,
+      $colorOutline 100%
+    );
+}
+
+// body {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   height: 100vh;
+//   background-color: $colorBg;
+// }
+
+
+
+.mouse {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 15vh;
+  @include bgGradient;
+  // position: relative;
+  width: $widthMouse;
+  height: $heightMouse;
+  border-radius: 100px;
+  background-size: 100% 200%;
+  animation: 
+    colorSlide $animDuration linear 5s,
+    nudgeMouse $animDuration ease-out 5s;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    margin: auto;
+  }
+  &:before {
+    width: $widthMouse - $borderMouse;
+    height: $heightMouse - $borderMouse;
+    background-color: $colorBg;
+    border-radius: 100px;
+  }
+  &:after {
+    background-color: $colorOutline;
+    width: $sizeTrackball;
+    height: $sizeTrackball;
+    border-radius: 100%;
+    animation: trackBallSlide $animDuration linear 5s;
+  }
+}
+
+@keyframes colorSlide { 
+  0% { background-position: 0% 100%; }
+  20% { background-position: 0% 0%; }
+  21% { background-color: $colorOutlineFade; }
+  29.99% { 
+    background-color: $colorOutline;
+    background-position: 0% 0%;
+  }
+  30% { 
+    background-color: $colorOutlineFade;
+    background-position: 0% 100%;
+  }
+  50% { background-position: 0% 0%; }
+  51% { background-color: $colorOutlineFade; }
+  59% { 
+    background-color: $colorOutline;
+    background-position: 0% 0%;
+  }
+  60% { 
+    background-color: $colorOutlineFade;
+    background-position: 0% 100%;
+  }
+  80% { background-position: 0% 0%; }
+  81% { background-color: $colorOutlineFade; }
+  90%, 100% { background-color: $colorOutline; }
+}
+
+@keyframes trackBallSlide {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(-$posTrackball);
+  }
+  6% { 
+    opacity: 1;
+    transform: scale(0.9) translateY($posTrackball/4);
+  }
+  14% {
+    opacity: 0;
+    transform: scale($shrinkTrackball) translateY($posTrackball*2);
+  }
+  15%, 19% {
+    opacity: 0;
+    transform: scale($shrinkTrackball) translateY(-$posTrackball);
+  }
+  28%, 29.99% {
+    opacity: 1;
+    transform: scale(1) translateY(-$posTrackball);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(1) translateY(-$posTrackball);
+  }
+  36% { 
+    opacity: 1;
+    transform: scale(0.9) translateY($posTrackball/4);
+  }
+  44% {
+    opacity: 0;
+    transform: scale($shrinkTrackball) translateY($posTrackball*2);
+  }
+  45%, 49% {
+    opacity: 0;
+    transform: scale($shrinkTrackball) translateY(-$posTrackball);
+  }
+  58%, 59.99% {
+    opacity: 1;
+    transform: scale(1) translateY(-$posTrackball);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1) translateY(-$posTrackball);
+  }
+  66% { 
+    opacity: 1;
+    transform: scale(0.9) translateY($posTrackball/4);
+  }
+  74% {
+    opacity: 0;
+    transform: scale($shrinkTrackball) translateY($posTrackball*2);
+  }
+  75%, 79% {
+    opacity: 0;
+    transform: scale($shrinkTrackball) translateY(-$posTrackball);
+  }
+  88%, 100% {
+    opacity: 1;
+    transform: scale(1) translateY(-$posTrackball);
+  }
+}
+
+@keyframes nudgeMouse {
+  0% { transform: translateY(0); }
+  20% { transform: translateY($posMouse); }
+  30% { transform: translateY(0); }
+  50% { transform: translateY($posMouse); }
+  60% { transform: translateY(0); }
+  80% { transform: translateY($posMouse); }
+  90% { transform: translateY(0); }
+}
+
+@keyframes nudgeText {
+  0% { transform: translateY(0); }
+  20% { transform: translateY($posText); }
+  30% { transform: translateY(0); }
+  50% { transform: translateY($posText); }
+  60% { transform: translateY(0); }
+  80% { transform: translateY($posText); }
+  90% { transform: translateY(0); }
+}
+
+@keyframes colorText { 
+  21% { color: $colorOutlineFade; }
+  30% { color: $colorOutline; }
+  51% { color: $colorOutlineFade; }
+  60% { color: $colorOutline; }
+  81% { color: $colorOutlineFade; }
+  90% { color: $colorOutline; }
+}
+
+// About 
+.about-me-container {
+  height: 100vh;
+  padding: 3vh 3vw;
+}
+
+// Work 
+.projects-container {
+  padding: 3vh 3vw;
+}
+
+// Tech
+.tech-skills-container {
+
+}
+
+.skills-header {
+  text-align: center;
+}
+
+.tech-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  p {
+    width: 30vw;
+    // margin-left: 10vw;
+  }
+
+}
+
+.tech-logos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 60vw;
+  height: 30vh;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  svg {
+    margin: 10px;
+    
+  }
+}
+
+.experience-container {
+  h2 {
+    text-align: center;
+  }
+}
+
+footer {
   text-align: center;
   padding: 3vh;
-  position: fixed;
+  // position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
