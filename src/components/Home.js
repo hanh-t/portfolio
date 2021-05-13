@@ -2,12 +2,13 @@ import React from 'react'
 // import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
 import About from './About'
-import Work from './Work'
+import Projects from './Projects'
 import Tech from './Tech'
 import Experience from './Experience'
 import { FiChevronsDown } from 'react-icons/fi'
 
 import Footer from './Footer'
+import Contact from './Contact'
 
 
 
@@ -42,8 +43,8 @@ const Home = () => {
           </div>
         </section>
 
-        <section >
-          <Work />
+        <section id="projects">
+          <Projects />
         </section>
 
         <section className="tech-skills-container">
@@ -54,6 +55,9 @@ const Home = () => {
           <Experience />
         </section>
 
+        <section className="contact">
+          <Contact />
+        </section>
       </main>
       <Footer />
     </>

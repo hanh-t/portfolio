@@ -301,14 +301,14 @@ $animDuration: 5s;
   padding: 3vh 3vw;
 }
 
-// Work 
+// Projects 
 .projects-container {
   padding: 3vh 3vw;
 }
 
 // Tech
 .tech-skills-container {
-
+  padding: 3vh 3vw;
 }
 
 .skills-header {
@@ -342,11 +342,31 @@ $animDuration: 5s;
   }
 }
 
+// Experience
 .experience-container {
   h2 {
     text-align: center;
   }
+  padding: 3vh 3vw;
 }
+
+//  Contact
+.contact {
+  padding: 3vh 3vw;
+  h2 {
+    text-align: center;
+  }
+  .contact-links {
+    display: flex;
+    justify-content: space-evenly;
+   
+    a {
+      vertical-align: middle;
+    }
+    // align-items: center;
+  }
+}
+
 
 footer {
   text-align: center;

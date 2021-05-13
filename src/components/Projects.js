@@ -1,11 +1,18 @@
 import React from 'react'
 
-const Work = () => {
+
+const Projects = () => {
+  // const Carousal = require('3d-react-carousal')
+
+  // const projectSlides1 = [
+  //   <img key={1} src="./assets/project4-homepage.png" alt="project4-homepage"/>
+  // ]
 
   return (
     <div className="projects-container">
       <h2>Projects</h2>
-      <div className="project-container">
+      <div className="project1-container">
+        {/* <Carousal slides={projectSlides1} autoplay={false} interval={1000} /> */}
         <h2>HABITUP</h2>
         <p>My final, solo project at General Assembly and a full-stack app built using Python, Django REST Framework, React Hooks and a PostgreSQL database, with CRUD functionality. It is an interactive habit-tracker with a social aspect, built in one week.</p>
       </div>
@@ -25,4 +32,4 @@ const Work = () => {
   )
 }
 
-export default Work
+export default Projects

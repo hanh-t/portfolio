@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Home from './components/Home'
 // import Navbar from './components/Navbar'
 // import About from './components/About'
-import Work from './components/Work'
+import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Tech from './components/Tech'
 // import Footer from './components/Footer'
@@ -23,7 +23,7 @@ function App() {
           <Tech />
         </Route>
         <Route exact path='/work'>
-          <Work />
+          <Projects />
         </Route>
         <Route exact path='/contact'>
           <Contact />
