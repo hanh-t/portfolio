@@ -18,7 +18,7 @@ h1 {
   font-family: 'Satisfy', cursive;
 }
 
-h2, a, p {
+h2, h3, h4, a, p, ul, li {
   font-family: 'Poiret One', cursive;
   // font-family: 'Julius Sans One', sans-serif;
 }
@@ -36,6 +36,12 @@ nav {
     margin-top: 1vh;
   }
 }
+
+ul, li {
+  list-style-type: none;
+}
+
+
 // p {
 //   font-family: 'Thasadith', sans-serif;
 // }
@@ -306,6 +312,20 @@ $animDuration: 5s;
   padding: 3vh 3vw;
 }
 
+.project-tech {
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
 // Tech
 .tech-skills-container {
   padding: 3vh 3vw;
@@ -319,27 +339,30 @@ $animDuration: 5s;
   display: flex;
   flex-direction: row;
   align-items: center;
-  p {
-    width: 30vw;
-    // margin-left: 10vw;
-  }
+
 
 }
 
 .tech-logos{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 60vw;
-  height: 30vh;
-  flex-wrap: wrap;
-  margin-top: 5vh;
-  margin-left: 2vw;
-  margin-right: 2vw;
-  svg {
-    margin: 10px;
-    
+  width: 60em;
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1em;
+    }
   }
+}
+
+.tech-para {
+  width: 30em;
+  padding: 2em;
 }
 
 // Experience

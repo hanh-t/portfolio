@@ -8,23 +8,40 @@ const Tech = () => {
       <h2 className="skills-header">Skills and the tech I use</h2>
       <div className="tech-container">
         <aside className="tech-logos">
-          <ul></ul>
-          <SiJavascript size="5em"/>
-          <SiHtml5 size="5em"/>
-          <SiCss3 size="5em"/>
-          <SiReact size="5em"/>
-          <SiNodeDotJs size="5em"/>
-          <SiPython size="5em"/>
-          <SiMongodb size="5em"/>
-          <SiDjango size="5em"/>
-          <SiPostgresql size="5em"/>
-          <SiGithub size="5em"/>
-          <SiGit size="5em"/>
-          <SiTrello size="5em"/>
-          <SiSlack size="5em"/>
-          <SiBulma size="5em"/>
+          <ul>
+            <li><p><SiJavascript /></p>
+              <p>JavaScript</p></li>
+            <li><p><SiHtml5 /></p>
+              <p>HTML5</p></li>
+            <li><p><SiCss3 /></p>
+              <p>CSS3</p></li>
+            <li><p><SiReact /></p>
+              <p>React.js</p></li>
+            <li><p><SiNodeDotJs /></p>
+              <p>Node.js</p></li>
+            <li><p><SiPython /></p>
+              <p>Python</p></li>
+            <li><p><SiMongodb /></p>
+              <p>MongoDB</p></li>
+            <li><p><SiDjango /></p>
+              <p>Django</p></li>
+            <li><p><SiPostgresql /></p>
+              <p>PostgreSQL</p></li>
+            <li><p><SiGithub /></p>
+              <p>GitHub</p></li>
+            <li><p><SiGit /></p>
+              <p>Git</p></li>
+            <li><p><SiTrello /></p>
+              <p>Trllo</p></li>
+            <li><p><SiSlack /></p>
+              <p>Slack</p></li>
+            <li><p><SiBulma /></p>
+              <p>Bulma</p></li>
+          
+
+          </ul>
         </aside>
-        <p>Not an exhaustive list but the main ones used so far. I am excited to learn new languages and have started on Gatsby and Next.js already.</p>
+        <p className="tech-para">Not an exhaustive list but the main ones used so far. I am excited to learn new languages and have started on Gatsby and Next.js already.</p>
       </div>
     </>
     
