@@ -74,7 +74,7 @@ const Projects = () => {
             <li><i className="devicon-javascript-plain"></i>
               <p>JavaScript</p></li>
             <li><i className="devicon-html5-plain"></i>
-              <p>HMTL5</p></li>
+              <p>HTML5</p></li>
             <li><i className="devicon-css3-plain"></i>
               <p>CSS3</p></li>
           </ul>

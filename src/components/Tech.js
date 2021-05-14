@@ -32,7 +32,7 @@ const Tech = () => {
             <li><p><SiGit /></p>
               <p>Git</p></li>
             <li><p><SiTrello /></p>
-              <p>Trllo</p></li>
+              <p>Trello</p></li>
             <li><p><SiSlack /></p>
               <p>Slack</p></li>
             <li><p><SiBulma /></p>
