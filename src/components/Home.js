@@ -9,6 +9,7 @@ import { FiChevronsDown } from 'react-icons/fi'
 import Footer from './Footer'
 import Contact from './Contact'
 import Popup from 'reactjs-popup'
+import Container from '@material-ui/core/Container'
 
 
 const Home = () => {
@@ -55,27 +56,31 @@ const Home = () => {
           </div>
         </div>
       
-        <section >
-          <div id="about">
-            <About />
-          </div>
-        </section>
+        <Container>
+          <section >
+            <div id="about">
+              <About />
+            </div>
+          </section>
+  
+        
+    
+          <section id="projects">
+            <Projects />
+          </section>
 
-        <section id="projects">
-          <Projects />
-        </section>
+          <section className="tech-skills-container">
+            <Tech />
+          </section>
 
-        <section className="tech-skills-container">
-          <Tech />
-        </section>
+          <section className="experience-container">
+            <Experience />
+          </section>
 
-        <section className="experience-container">
-          <Experience />
-        </section>
-
-        <section className="contact">
-          <Contact />
-        </section>
+          <section className="contact">
+            <Contact />
+          </section>
+        </Container>
       </main>
       <Footer />
     </>

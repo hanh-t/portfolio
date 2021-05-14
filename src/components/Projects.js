@@ -1,19 +1,27 @@
 import React from 'react'
 import { SiBulma }  from 'react-icons/si'
+import Carousel from 'react-spring-3d-carousel'
+
 
 
 const Projects = () => {
-  // const Carousal = require('3d-react-carousal')
-
-  // const projectSlides1 = [
-  //   <img key={1} src="./assets/project4-homepage.png" alt="project4-homepage"/>
-  // ]
+  
+  const projectSlides1 = [
+    {
+      key: 1,
+      content: <img src="../assets/p4Home.jpg" alt="project4Home"/>,
+    },
+    {
+      key: 2,
+      content: <img src="../assets/resources.png" alt="resources"/>,
+    }
+  ]
 
   return (
     <div className="projects-container">
       <h2>Projects</h2>
       <div className="project1-container">
-        {/* <Carousal slides={projectSlides1} autoplay={false} interval={1000} /> */}
+        <Carousel slides={projectSlides1} />
         <h2>HABITUP</h2>
         <p>My final, solo project at General Assembly and a full-stack app built using Python, Django REST Framework, React Hooks and a PostgreSQL database, with CRUD functionality. It is an interactive habit-tracker with a social aspect, built in one week.</p>
         <div className="project-tech">
