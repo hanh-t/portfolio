@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Thasadith&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 #root {
   height: 100vh;
@@ -14,13 +17,17 @@ body, html {
   margin: 0;
 }
 
-h1 {
-  font-family: 'Satisfy', cursive;
+h1, h2, h3 {
+  // font-family: 'Satisfy', cursive;
+  // font-family: 'Poiret One', cursive;
+  font-family: 'Montserrat', sans-serif;
 }
 
-h2, h3, h4, a, p, ul, li {
-  font-family: 'Poiret One', cursive;
+ h4, a, p, ul, li {
+  
   // font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
+  // font-family: 'Open Sans', sans-serif;
 }
 
 a {
