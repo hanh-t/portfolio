@@ -4,7 +4,7 @@ import { SiJavascript, SiHtml5, SiCss3, SiReact, SiPython, SiMongodb, SiDjango, 
 const Tech = () => {
 
   return (
-    <>
+    <div className="tech-skills-container">
       <h2 className="skills-header">Skills and the tech I use</h2>
       <div className="tech-container">
         <aside className="tech-logos">
@@ -43,7 +43,7 @@ const Tech = () => {
         </aside>
         <p className="tech-para">Not an exhaustive list but the main ones used so far. I am excited to learn new languages and have started on Gatsby and Next.js already.</p>
       </div>
-    </>
+    </div>
     
 
   )

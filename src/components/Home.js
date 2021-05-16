@@ -69,15 +69,15 @@ const Home = () => {
             <Projects />
           </section>
 
-          <section className="tech-skills-container">
+          <section id="tech">
             <Tech />
           </section>
 
-          <section className="experience-container">
+          <section id="experience">
             <Experience />
           </section>
 
-          <section className="contact">
+          <section id="contact">
             <Contact />
           </section>
         </Container>
