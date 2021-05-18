@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 #root {
   height: 100vh;
@@ -22,20 +23,13 @@ body, html {
 
 
 
-h2, h3 {
-  // font-family: 'Satisfy', cursive;
-  // font-family: 'Poiret One', cursive;
+h2 {
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  // font-family: 'Open Sans', sans-serif;
   color: #1f0322;
 }
 
-h4, a, p, ul, li {
-  
-  // font-family: 'Julius Sans One', sans-serif;
-  // font-family: 'Merriweather Sans', sans-serif;
-  // font-family: 'Open Sans', sans-serif;
+h3, h4, a, p, ul, li {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -59,14 +53,8 @@ a {
   }
 }
 
-
-
-
-
-
-.hero-section {
-  height: 100vh;  
-  // background: linear-gradient(-45deg, #ff6666, #818aa3, #1f0322);
+.ui.top.fixed.menu.nav-bgd {
+  background: #1f0322;
 	// background-size: 400% 400%;
   // animation: gradient 15s ease infinite;
   
@@ -84,6 +72,28 @@ a {
 }
 
 
+
+
+.hero-section {
+  height: 100vh;  
+  background: linear-gradient(-45deg, #ff6666, #818aa3, #1f0322);
+	background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
+
 .hero-text {
   display: flex;
   flex-direction: column;
@@ -93,7 +103,7 @@ a {
   h1 {
     font-size: 5em;
     color: #1f0322;
-    font-family: 'Montserrat', sans-serif;
+    
   
   }
   h2 {
@@ -107,7 +117,9 @@ a {
   }
   
 }
-
+.title {
+  font-family: 'Montserrat', sans-serif;
+}
 .hero-arrow-down {
   text-align: center;
   a {
@@ -137,7 +149,7 @@ $sizeTrackball: 10px;
 $posTrackball: 20px;
 $shrinkTrackball: 0.4;
 
-$animDuration: 5s;
+$animDuration: infinite;
 
 .mouse-container {
   display: flex;
@@ -338,11 +350,16 @@ $animDuration: 5s;
   height: 50vh;
   // padding: 3vh 3vw;
   h2 {
-    padding-top: 3vh;
+    padding-top: 5vh;
   }
   p {
     font-size: 1.3em;
   }
+}
+.header-title {
+  // font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  
 }
 
 // Projects 
@@ -362,6 +379,21 @@ $animDuration: 5s;
   p {
     font-size: 1.2em;
   }
+  h3 {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+.readme-link {
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: inherit;
+    
+  }
+  a:hover {
+    color: #818aa3;
+  }
+
 }
 .aws-btn {
 
@@ -381,8 +413,14 @@ $animDuration: 5s;
   }
 
   .slide-container > .awssld > .awssld__wrapper > .awssld__container > .awssld__box > .awssld__content > img {
-    object-fit: cover;
+    object-fit: contain;
+    
   }
+
+  .slide-container > .awssld > .awssld__wrapper > .awssld__container > .awssld__box > .awssld__content {
+    background-color: inherit;
+  }
+  
 
   .project-info {
     margin-top: 6vh;
@@ -413,6 +451,7 @@ $animDuration: 5s;
 
 .skills-header {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
   
 }
 
@@ -421,7 +460,7 @@ $animDuration: 5s;
   flex-direction: row;
   align-items: center;
   margin-bottom: 3em;
-
+  
 }
 
 .tech-logos{
@@ -447,19 +486,28 @@ $animDuration: 5s;
   width: 30em;
   padding: 2em;
   align-self: baseline;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3em;
 }
 
 // Experience
 .experience-container {
   height: 50vh;
+  margin-top: 5vh;
   h2 {
     text-align: center;
   }
   a{
     text-decoration: none;
-    color: inherit;
+    color: #ff6666;
     font-weight: bold;
-
+  }
+  a:hover {
+    text-decoration: none;
+    color: #818aa3;
+  }
+  h3, h4 {
+    font-family: 'Poppins', sans-serif;
   }
 }
 
@@ -475,13 +523,24 @@ $animDuration: 5s;
 .contact-links {
   display: flex;
   justify-content: space-evenly;
- 
+  margin-top: 4vh;
   a {
     
     text-decoration: none;
     color: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    p {
+      color: inherit;
+      font-size: 1.2em;
+      padding-left: 0.4em;
+    }
+  } 
+  a:hover {
+    text-decoration: none;
+    color: #818aa3;
   }
-
 }
 
 
@@ -500,7 +559,7 @@ footer {
   
   }
   a:hover {
-    color: inherit;
+    color: #818aa3;
   }
   p {
     margin-top: 3vh;

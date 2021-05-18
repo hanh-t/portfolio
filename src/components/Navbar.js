@@ -8,22 +8,25 @@ const Navbar = () => {
   return (
     <div id="home">
       <nav id="nav">
-      
-        <AnchorLink href="#home">
+        <div className="ui top fixed menu nav-bgd">
+          <div className="right menu">
+            <AnchorLink href="#home">
         Home
-        </AnchorLink>
-        <AnchorLink href="#about">
+            </AnchorLink>
+            <AnchorLink href="#about">
         About
-        </AnchorLink>
-        <AnchorLink href="#tech">
+            </AnchorLink>
+            <AnchorLink href="#tech">
         Tech 
-        </AnchorLink>
-        <AnchorLink href="#projects">
+            </AnchorLink>
+            <AnchorLink href="#projects">
         Projects
-        </AnchorLink>
-        <AnchorLink href="#contact">
+            </AnchorLink>
+            <AnchorLink href="#contact">
         Contact
-        </AnchorLink>
+            </AnchorLink>
+          </div>
+        </div>
       </nav>
     </div>
   )

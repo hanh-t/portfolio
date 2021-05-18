@@ -40,10 +40,10 @@ const Home = () => {
             )}
           </Popup> */}
     
-          {/* <span role="img" aria-label="hand-wave" >👋</span>  */}
+         
           <div>
             <div id="hero" className="hero-text">
-              <h1>HANNAH TINACCI</h1>
+              <h1 className="title">HANNAH TINACCI</h1>
               <h2>A London-based <span className="bio-highlight">full-stack developer</span>, previously in educational publishing, looking for a role in an <span className="bio-highlight">impact-oriented company</span></h2>
             </div>
             <div className="hero-arrow-down">
@@ -61,9 +61,9 @@ const Home = () => {
        
         <div className="ui container">
           <section >
-            <div id="about">
-              <About />
-            </div>
+           
+            <About />
+         
           </section>
   
           <section id="tech">
@@ -79,7 +79,7 @@ const Home = () => {
           <section id="experience">
             <Experience />
           </section>
-
+       
           <section id="contact">
             <Contact />
           </section>

@@ -6,7 +6,7 @@ const Tech = () => {
   return (
     <div className="main-tech-container">
      
-      <h2 className="skills-header">Skills and the tech I use</h2>
+      <h2 className="header-title">Skills and the tech I use</h2>
       <div className="tech-container">
         <aside className="tech-logos">
           <ul>

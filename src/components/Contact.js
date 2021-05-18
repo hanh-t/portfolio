@@ -8,11 +8,11 @@ const Contact = () => {
 
   return (
     <div className="contact">
-      <h2>Contact</h2>
+      <h2 className="header-title">Contact</h2>
       <div className="contact-links">
-        <a href="https://github.com/hannahtinacci" target="_blank" rel="noreferrer"> <GitHub /> GitHub</a>
-        <a href="https://www.linkedin.com/in/hannahtinacci/" target="_blank" rel="noreferrer"><Linkedin /> LinkedIn</a>
-        <a href="mailto:hannahtinacci@gmail.com" > <Mail /> Email</a>
+        <a href="https://github.com/hannahtinacci" target="_blank" rel="noreferrer"> <GitHub /> <p>GitHub</p></a>
+        <a href="https://www.linkedin.com/in/hannahtinacci/" target="_blank" rel="noreferrer"><Linkedin /> <p>LinkedIn</p></a>
+        <a href="mailto:hannahtinacci@gmail.com" > <Mail /> <p>Email</p></a>
       </div>
     </div>
     
