@@ -4,38 +4,39 @@ import { SiJavascript, SiHtml5, SiCss3, SiReact, SiPython, SiMongodb, SiDjango, 
 const Tech = () => {
 
   return (
-    <div className="tech-skills-container">
+    <div className="ui container">
+
       <h2 className="skills-header">Skills and the tech I use</h2>
       <div className="tech-container">
         <aside className="tech-logos">
           <ul>
-            <li><p><SiJavascript /></p>
+            <li><p><SiJavascript size="4em"/></p>
               <p>JavaScript</p></li>
-            <li><p><SiHtml5 /></p>
+            <li><p><SiHtml5 size="4em"/></p>
               <p>HTML5</p></li>
-            <li><p><SiCss3 /></p>
+            <li><p><SiCss3 size="4em"/></p>
               <p>CSS3</p></li>
-            <li><p><SiReact /></p>
+            <li><p><SiReact size="4em"/></p>
               <p>React.js</p></li>
-            <li><p><SiNodeDotJs /></p>
+            <li><p><SiNodeDotJs size="4em"/></p>
               <p>Node.js</p></li>
-            <li><p><SiPython /></p>
+            <li><p><SiPython size="4em"/></p>
               <p>Python</p></li>
-            <li><p><SiMongodb /></p>
+            <li><p><SiMongodb size="4em"/></p>
               <p>MongoDB</p></li>
-            <li><p><SiDjango /></p>
+            <li><p><SiDjango size="4em"/></p>
               <p>Django</p></li>
-            <li><p><SiPostgresql /></p>
+            <li><p><SiPostgresql size="4em"/></p>
               <p>PostgreSQL</p></li>
-            <li><p><SiGithub /></p>
+            <li><p><SiGithub size="4em"/></p>
               <p>GitHub</p></li>
-            <li><p><SiGit /></p>
+            <li><p><SiGit size="4em"/></p>
               <p>Git</p></li>
-            <li><p><SiTrello /></p>
+            <li><p><SiTrello size="4em"/></p>
               <p>Trello</p></li>
-            <li><p><SiSlack /></p>
+            <li><p><SiSlack size="4em"/></p>
               <p>Slack</p></li>
-            <li><p><SiBulma /></p>
+            <li><p><SiBulma size="4em"/></p>
               <p>Bulma</p></li>
           
 

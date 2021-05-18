@@ -5,6 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 #root {
   height: 100vh;
@@ -20,14 +22,18 @@ body, html {
 h1, h2, h3 {
   // font-family: 'Satisfy', cursive;
   // font-family: 'Poiret One', cursive;
-  font-family: 'Montserrat', sans-serif;
+  // font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  
 }
 
- h4, a, p, ul, li {
+h4, a, p, ul, li {
   
   // font-family: 'Julius Sans One', sans-serif;
-  font-family: 'Merriweather Sans', sans-serif;
+  // font-family: 'Merriweather Sans', sans-serif;
   // font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -35,14 +41,22 @@ a {
   color: inherit;
 }
 
-nav {
+
+
+#nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   a {
-    padding: 0 10px;
+    padding: 1vh 1vw;
+    margin-right: 1vw;
     margin-top: 1vh;
+    text-decoration: none;
+    color: #f1e9db;
+    
   }
 }
+
+
 
 
 // p {
@@ -51,7 +65,14 @@ nav {
 
 .hero-section {
   height: 100vh;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  // background-color: #222a30;
+  // background-image: url('../assets/sunset.jpg');
+  // background-position: center;
+  // background-size: cover;
+  // opacity: 0.7;
+
+  
+  background: linear-gradient(-45deg, #ff6666, #818aa3, #1f0322);
 	background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   
@@ -68,14 +89,27 @@ nav {
   }
 }
 
+
 .hero-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
-  // top: 50vh;
-  // left: 50vw;
+  height: 60vh;
+  h1 {
+    font-size: 5em;
+    color: #1f0322;
+    
+  }
+  h2 {
+    width: 60vw;
+    font-size: 2em;
+    color: #f1e9db;
+  }
+  .bio-highlight {
+    color: #222a30;
+    font-weight: bold;
+  }
   
 }
 
@@ -93,8 +127,8 @@ nav {
 // 
 @import url(https://fonts.googleapis.com/css?family=Cabin);
 
-$colorBg:  #ffffff;
-$colorOutline: #222a30; 
+$colorBg:  #222a30;
+$colorOutline: #ffffff; 
 $colorOutlineFade: #4e5559;
 
 $widthMouse: 52px;
@@ -108,7 +142,7 @@ $sizeTrackball: 10px;
 $posTrackball: 20px;
 $shrinkTrackball: 0.4;
 
-$animDuration: 5s;
+$animDuration: infinite;
 
 .mouse-container {
   display: flex;
@@ -305,14 +339,27 @@ $animDuration: 5s;
 }
 
 // About 
-.about-me-container {
+.about-container {
   height: 90vh;
-  padding: 3vh 3vw;
+  // padding: 3vh 3vw;
+  h2 {
+    padding-top: 3vh;
+  }
 }
 
 // Projects 
-
-
+.projects-container{
+  h2 {
+    text-align: center;
+  }
+  width: 40vw;
+  display: flex;
+  // flex-wrap: wrap;
+}
+.project-container {
+  width: 35vw;
+  margin: 1em;
+}
 .aws-btn {
 
   --slider-height-percentage: 60%;
@@ -330,11 +377,13 @@ $animDuration: 5s;
   --loader-bar-height: 6px;
   }
 
-  .slide {
-    background-size: contain;
+  .slide-container > .awssld > .awssld__wrapper > .awssld__container > .awssld__box > .awssld__content > img {
+    object-fit: cover;
   }
+
   .project-info {
     margin-top: 6vh;
+    // text-align: center;
   }
 
 .project-tech {
@@ -353,20 +402,20 @@ $animDuration: 5s;
   }
 }
 
+
 // Tech
-.tech-skills-container {
-  padding: 3vh 3vw;
-}
+
 
 .skills-header {
   text-align: center;
+  margin-top: 1.5em;
 }
 
 .tech-container{
   display: flex;
   flex-direction: row;
   align-items: center;
-
+  margin-bottom: 3em;
 
 }
 
@@ -384,8 +433,8 @@ $animDuration: 5s;
       align-items: center;
       margin: 1em;
       list-style-type: none;
-      
-    }
+    
+  }
   }
 }
 
@@ -396,36 +445,66 @@ $animDuration: 5s;
 
 // Experience
 .experience-container {
+  height: 70vh;
   h2 {
     text-align: center;
   }
-  padding: 3vh 3vw;
+  a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+
+  }
 }
 
 //  Contact
 .contact {
-  padding: 3vh 3vw;
+  height: 10vh;
   h2 {
     text-align: center;
+    margin-bottom: 2vh;
   }
-  .contact-links {
-    display: flex;
-    justify-content: space-evenly;
-   
-    a {
-      vertical-align: middle;
-    }
-    // align-items: center;
+  
+}
+.contact-links {
+  display: flex;
+  justify-content: space-evenly;
+ 
+  a {
+    
+    text-decoration: none;
+    color: inherit;
   }
+
 }
 
 
 footer {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   padding: 3vh;
   // position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
+  a {
+    text-decoration: none;
+    color: inherit;
   
+  }
+  a:hover {
+    color: inherit;
+  }
+  p {
+    margin-top: 3vh;
+    text-transform: uppercase;
+  }
+
+}
+
+.footer-icon {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
 }

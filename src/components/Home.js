@@ -5,22 +5,23 @@ import About from './About'
 import Projects from './Projects'
 import Tech from './Tech'
 import Experience from './Experience'
-import { FiChevronsDown } from 'react-icons/fi'
+// import { FiChevronsDown } from 'react-icons/fi'
 import Footer from './Footer'
 import Contact from './Contact'
-import Popup from 'reactjs-popup'
-import Container from '@material-ui/core/Container'
+// import Popup from 'reactjs-popup'
+
 
 
 const Home = () => {
-  const overlayStyle = { background: 'rgba(0,0,0,0.5)' }
+  // const overlayStyle = { background: 'rgba(0,0,0,0.5)' }
 
   return (
     <>
       <main>
-      
+        
         <div className="hero-section">
-          <Popup 
+          <Navbar />
+          {/* <Popup 
             trigger={<button className="button">Menu</button>}
             modal
             overlayStyle={overlayStyle}
@@ -37,26 +38,28 @@ const Home = () => {
                 </div>
               </>
             )}
-          </Popup>
+          </Popup> */}
     
-          <Navbar />
-          <div id="hero" className="hero-text">
-            <h1>Welcome! <span role="img" aria-label="hand-wave" >👋</span> I&apos;m Hannah Tinacci</h1>
-            <h2>A London-based full-stack developer, previously in educational publishing, looking for a role in an impact-oriented company</h2>
-          </div>
-          <div className="hero-arrow-down">
-            <a href="#about" ><FiChevronsDown /></a>
-            <div className="mouse-container">
+          {/* <span role="img" aria-label="hand-wave" >👋</span>  */}
+          <div>
+            <div id="hero" className="hero-text">
+              <h1>HANNAH TINACCI</h1>
+              <h2>A London-based <span className="bio-highlight">full-stack developer</span>, previously in educational publishing, looking for a role in an <span className="bio-highlight">impact-oriented company</span></h2>
+            </div>
+            <div className="hero-arrow-down">
+              {/* <a href="#about" ><FiChevronsDown /></a> */}
+              <div className="mouse-container">
 
-              <div className="mouse">
-                {/* <p>Scroll</p> */}
+                <div className="mouse">
+                  {/* <p>Scroll</p> */}
+                </div>
+
               </div>
-
             </div>
           </div>
         </div>
-      
-        <Container>
+       
+        <div className="ui container">
           <section >
             <div id="about">
               <About />
@@ -80,7 +83,7 @@ const Home = () => {
           <section id="contact">
             <Contact />
           </section>
-        </Container>
+        </div>
       </main>
       <Footer />
     </>

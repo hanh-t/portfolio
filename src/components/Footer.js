@@ -5,8 +5,11 @@ const Footer = () => {
 
   return (
     <footer>
-      <a href="#nav"><FiChevronsUp /></a>
-      <p> &copy; HANNAH TINACCI 2021 </p>
+      <div className="footer-icon">
+        <a href="#home"><FiChevronsUp size="2em"/></a>
+        <small>back to top</small>
+      </div>
+      <p> &copy; hannahtinacci.com 2021 </p>
     </footer>
   )
 }
