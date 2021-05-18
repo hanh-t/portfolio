@@ -66,15 +66,15 @@ const Home = () => {
             </div>
           </section>
   
-        
+          <section id="tech">
+            <Tech />
+          </section>
     
           <section id="projects">
             <Projects />
           </section>
 
-          <section id="tech">
-            <Tech />
-          </section>
+       
 
           <section id="experience">
             <Experience />

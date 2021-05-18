@@ -25,10 +25,10 @@ body, html {
 h2, h3 {
   // font-family: 'Satisfy', cursive;
   // font-family: 'Poiret One', cursive;
-  
+  font-family: 'Poppins', sans-serif;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  
+  // font-family: 'Open Sans', sans-serif;
+  color: #1f0322;
 }
 
 h4, a, p, ul, li {
@@ -62,34 +62,25 @@ a {
 
 
 
-// p {
-//   font-family: 'Thasadith', sans-serif;
-// }
+
 
 .hero-section {
-  height: 100vh;
-  // background-color: #222a30;
-  // background-image: url('../assets/sunset.jpg');
-  // background-position: center;
-  // background-size: cover;
-  // opacity: 0.7;
-
+  height: 100vh;  
+  // background: linear-gradient(-45deg, #ff6666, #818aa3, #1f0322);
+	// background-size: 400% 400%;
+  // animation: gradient 15s ease infinite;
   
-  background: linear-gradient(-45deg, #ff6666, #818aa3, #1f0322);
-	background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+  // @keyframes gradient {
+  //   0% {
+  //     background-position: 0% 50%;
+  //   }
+  //   50% {
+  //     background-position: 100% 50%;
+  //   }
+  //   100% {
+  //     background-position: 0% 50%;
+  //   }
+  // }
 }
 
 
@@ -146,7 +137,7 @@ $sizeTrackball: 10px;
 $posTrackball: 20px;
 $shrinkTrackball: 0.4;
 
-$animDuration: infinite;
+$animDuration: 5s;
 
 .mouse-container {
   display: flex;
@@ -344,25 +335,33 @@ $animDuration: infinite;
 
 // About 
 .about-container {
-  height: 90vh;
+  height: 50vh;
   // padding: 3vh 3vw;
   h2 {
     padding-top: 3vh;
+  }
+  p {
+    font-size: 1.3em;
   }
 }
 
 // Projects 
 .projects-container{
+  margin-top: 3vh;
   h2 {
     text-align: center;
   }
-  width: 40vw;
-  display: flex;
+  // width: 50vw;
+  // display: flex;
   // flex-wrap: wrap;
 }
 .project-container {
-  width: 35vw;
+  // width: 45vw;
   margin: 1em;
+  margin-bottom: 3em;
+  p {
+    font-size: 1.2em;
+  }
 }
 .aws-btn {
 
@@ -408,11 +407,13 @@ $animDuration: infinite;
 
 
 // Tech
-
+.main-tech-container {
+  height: 50vh;
+}
 
 .skills-header {
   text-align: center;
-  margin-top: 1.5em;
+  
 }
 
 .tech-container{
@@ -445,11 +446,12 @@ $animDuration: infinite;
 .tech-para {
   width: 30em;
   padding: 2em;
+  align-self: baseline;
 }
 
 // Experience
 .experience-container {
-  height: 70vh;
+  height: 50vh;
   h2 {
     text-align: center;
   }
