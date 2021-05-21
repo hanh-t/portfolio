@@ -1,17 +1,18 @@
 import React from 'react'
 
+
 const Experience = () => {
 
   return (
     <div className="experience-container">
-      <h2 className="header-title">Experience</h2>
+      <h2 className="header-title"><span className="funky-underline">Experience</span></h2>
       
       <h3>Software Engineering Immersive (SEI), General Assembly, London</h3>
       <h4>February – May 2021</h4>
       <p>
         12-week, full-time course that covered the fundamentals of full-stack web development. The course
         was fully remote so I utilised Zoom and Slack for daily stand-ups, lessons, labs, pair-coding and
-        project work. For more details on my projects, click through to <a href="#projects">Projects, here</a>
+        project work. You can jump back to view my projects again by clicking <a className="project-link" href="#projects">here</a>.
       </p>
       
       <h3>Managing Editor, Macmillan Education Ltd, London</h3>

@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Thasadith&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 #root {
   height: 100vh;
@@ -18,10 +17,15 @@ body, html {
   height: 100vh;
   scroll-behavior: smooth;
   margin: 0;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 
-
+@media screen and (min-width: 50em) {
+  html {
+    font-size: 2vw;
+  }
+}
 
 h2 {
   font-family: 'Poppins', sans-serif;
@@ -36,6 +40,7 @@ h3, h4, a, p, ul, li {
 a {
   text-decoration: none;
   color: inherit;
+
 }
 
 
@@ -45,8 +50,6 @@ a {
   justify-content: flex-end;
   a {
     padding: 1vh 1vw;
-    margin-right: 1vw;
-    margin-top: 1vh;
     text-decoration: none;
     color: #f1e9db;
     
@@ -71,12 +74,12 @@ a {
   // }
 }
 
-
-
+// #1f0322
+// 587792
 
 .hero-section {
   height: 100vh;  
-  background: linear-gradient(-45deg, #ff6666, #818aa3, #1f0322);
+  background: linear-gradient(-45deg, #ff6666, #818aa3, #a491d3);
 	background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   
@@ -101,14 +104,15 @@ a {
   align-items: center;
   height: 60vh;
   h1 {
-    font-size: 5em;
+    font-size: 6em;
     color: #1f0322;
+    font-family: 'Quicksand', sans-serif;
     
-  
   }
   h2 {
     width: 60vw;
-    font-size: 2em;
+    font-size: 1.8em;
+    line-height: 1.4em;
     color: #f1e9db;
   }
   .bio-highlight {
@@ -117,13 +121,11 @@ a {
   }
   
 }
-.title {
-  font-family: 'Montserrat', sans-serif;
-}
+
 .hero-arrow-down {
   text-align: center;
   a {
-    bottom: 12vh;
+   padding-top: 10vh;
     position: absolute;
    
   }
@@ -131,8 +133,8 @@ a {
 
 
 
-// 
-@import url(https://fonts.googleapis.com/css?family=Cabin);
+// homepage mouse
+
 
 $colorBg:  #222a30;
 $colorOutline: #f1e9db; 
@@ -154,11 +156,11 @@ $animDuration: infinite;
 .mouse-container {
   display: flex;
   justify-content: center;
+  // margin-top: 17vh;
   p {
-    margin-top: 50px;
-    font-family: "Cabin", sans-serif;
-    letter-spacing: 12px;
-    text-indent: 12px;
+    // margin-top: 8vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
     color: $colorOutline;
     animation: 
       colorText $animDuration ease-out 5s,
@@ -178,17 +180,6 @@ $animDuration: infinite;
       $colorOutline 100%
     );
 }
-
-// body {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   height: 100vh;
-//   background-color: $colorBg;
-// }
-
-
 
 .mouse {
   position: absolute;
@@ -347,19 +338,41 @@ $animDuration: infinite;
 
 // About 
 .about-container {
-  height: 50vh;
-  // padding: 3vh 3vw;
+  // height: 50vh;
+ 
   h2 {
-    padding-top: 5vh;
+    padding-top: 7vh;
+    padding-bottom: 2.6vh;
   }
   p {
     font-size: 1.3em;
+    line-height: 1.45em;
+    padding-bottom: 1.4vh;
   }
+}
+
+.interests {
+  text-align: center;
 }
 .header-title {
   // font-family: 'Poppins', sans-serif;
   font-family: 'Montserrat', sans-serif;
   
+	
+  
+  
+}
+
+.funky-underline {
+  background-image: linear-gradient(120deg, #ff6666, #818aa3 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+  &:hover {
+    background-size: 100% 88%;
+    color: #f1e9db;
+  }
 }
 
 // Projects 
@@ -381,10 +394,13 @@ $animDuration: infinite;
   }
   h3 {
     font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: bold;
   }
 }
 .readme-link {
   text-align: center;
+  transition: transform .2s;
   a {
     text-decoration: none;
     color: inherit;
@@ -392,6 +408,10 @@ $animDuration: infinite;
   }
   a:hover {
     color: #818aa3;
+    
+  }
+  :hover {
+    transform: scale(1.5);
   }
 
 }
@@ -431,7 +451,7 @@ $animDuration: infinite;
   ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
   
     li {
       display: flex;
@@ -439,6 +459,7 @@ $animDuration: infinite;
       align-items: center;
  
         list-style-type: none;
+        padding: 0.45em;
     }
   }
 }
@@ -446,7 +467,11 @@ $animDuration: infinite;
 
 // Tech
 .main-tech-container {
-  height: 50vh;
+  // height: 50vh;
+  h2 {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
 }
 
 .skills-header {
@@ -477,7 +502,9 @@ $animDuration: infinite;
       align-items: center;
       margin: 1em;
       list-style-type: none;
-    
+      i {
+        color: #818aa3
+      }
   }
   }
 }
@@ -492,8 +519,8 @@ $animDuration: infinite;
 
 // Experience
 .experience-container {
-  height: 50vh;
-  margin-top: 5vh;
+  // height: 50vh;
+  // margin-top: 5vh;
   h2 {
     text-align: center;
   }
@@ -501,14 +528,25 @@ $animDuration: infinite;
     text-decoration: none;
     color: #ff6666;
     font-weight: bold;
+    
+    
   }
   a:hover {
     text-decoration: none;
     color: #818aa3;
+
   }
   h3, h4 {
     font-family: 'Poppins', sans-serif;
   }
+}
+
+.project-link {
+  transition: transform .2s;
+  :hover {
+    transform: scale(1.5);
+  }
+  
 }
 
 //  Contact
@@ -516,14 +554,16 @@ $animDuration: infinite;
   height: 10vh;
   h2 {
     text-align: center;
-    margin-bottom: 2vh;
+    // margin-bottom: 2vh;
+    padding-top: 3vh;
   }
   
 }
 .contact-links {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 4vh;
+  margin-top: 3vh;
+  
   a {
     
     text-decoration: none;
@@ -531,6 +571,10 @@ $animDuration: infinite;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    transition: transform .2s;
+    :hover{
+      transform: scale(1.3);
+    }
     p {
       color: inherit;
       font-size: 1.2em;
@@ -553,6 +597,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
+  margin-top: 2vh;
   a {
     text-decoration: none;
     color: inherit;

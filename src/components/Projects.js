@@ -14,6 +14,8 @@ import map from '../assets/map.gif'
 import quizavisionHome from '../assets/quizavisionHome.gif'
 import froggerIntro from '../assets/froggerIntro.png'
 import froggerHome from '../assets/froggerHome.png'
+import filmQ from '../assets/filmQ.png'
+import { FiLink } from 'react-icons/fi'
 
 
 
@@ -22,9 +24,9 @@ const Projects = () => {
 
   return (
     <>
-      <h2 className="header-title">Projects</h2>
+      <h2 className="header-title"><span className="funky-underline">Projects</span></h2>
       <div className="projects-container">
-        <div className="ui container two column grid ">
+        <div className="ui stackable two column grid ">
           <div className="column">
             <div className="project-container">
    
@@ -40,23 +42,24 @@ const Projects = () => {
                 </AwesomeSlider>
         
                 <p className="project-info">My final, solo project at General Assembly and a full-stack app built using Python, Django REST Framework, React Hooks and a PostgreSQL database, with CRUD functionality. It is an interactive habit-tracker with a social aspect, built in one week.</p>
-                
-                <div className="project-tech">
-                  <ul>
-                    <li><i className="devicon-python-plain"></i>
-                      <p>Python</p>
-                    </li>
-                    <li><i className="devicon-django-plain"></i>
-                      <p>Django</p></li>
-                    <li><i className="devicon-javascript-plain"></i>
-                      <p>JavaScript</p></li>
-                    <li><i className="devicon-react-original"></i>
-                      <p>React.js</p></li>
-                    <li><i className="devicon-postgresql-plain"></i>
-                      <p>PostgreSQL</p></li>
-                  </ul>
+                <div className="ui container">
+                  <div className="project-tech">
+                    <ul>
+                      <li><i className="devicon-python-plain"></i>
+                        <p>Python</p>
+                      </li>
+                      <li><i className="devicon-django-plain"></i>
+                        <p>Django</p></li>
+                      <li><i className="devicon-javascript-plain"></i>
+                        <p>JavaScript</p></li>
+                      <li><i className="devicon-react-original"></i>
+                        <p>React.js</p></li>
+                      <li><i className="devicon-postgresql-plain"></i>
+                        <p>PostgreSQL</p></li>
+                    </ul>
+                  </div>
                 </div>
-                <p className="readme-link"><a href="https://github.com/hannahtinacci/sei-project-4" target="_blank" rel="noreferrer"> ReadMe</a></p>
+                <p className="readme-link"><a href="https://github.com/hannahtinacci/sei-project-4" target="_blank" rel="noreferrer"><FiLink></FiLink> Link to project</a></p>
               </div>
 
             </div>
@@ -89,21 +92,20 @@ const Projects = () => {
                       <p>React.js</p></li>
                   </ul>
                 </div>
-                <p className="readme-link"><a href="https://github.com/hannahtinacci/SEI-Project-Three" target="_blank" rel="noreferrer">ReadMe</a></p>
+                <p className="readme-link"><a href="https://github.com/hannahtinacci/SEI-Project-Three" target="_blank" rel="noreferrer"><FiLink></FiLink> Link to project</a></p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="ui container two column grid ">
+        <div className="ui stackable two column grid ">
           <div className="column">
             <div className="project-container">
               <h3>Quizavision</h3>
               <div className="slide-container">
                 <AwesomeSlider cssModule={AwesomeSliderStyles}>
                   <div  data-src={quizavisionHome} />
-                  {/* <div  data-src={weather} />
-            <div  data-src={map} /> */}
+                  <div  data-src={filmQ} />
                 </AwesomeSlider>
        
                 <p className="project-info">A trivia quiz React app that consumed an external API and was completely pair-coded within 48 hours.</p>
@@ -117,7 +119,7 @@ const Projects = () => {
                       <p>Bulma</p></li>
                   </ul>
                 </div>
-                <p className="readme-link"><a href="https://github.com/hannahtinacci/sei-project-two" target="_blank" rel="noreferrer">ReadMe</a></p>
+                <p className="readme-link"><a href="https://github.com/hannahtinacci/sei-project-two" target="_blank" rel="noreferrer"><FiLink></FiLink> Link to project</a></p>
               </div>
             </div>
           </div>
@@ -144,7 +146,7 @@ const Projects = () => {
                       <p>CSS3</p></li>
                   </ul>
                 </div>
-                <p className="readme-link"><a href="https://github.com/hannahtinacci/sei-project-one" target="_blank" rel="noreferrer">ReadMe</a></p>
+                <p className="readme-link"><a href="https://github.com/hannahtinacci/sei-project-one" target="_blank" rel="noreferrer"><FiLink></FiLink> Link to project</a></p>
               </div>
             </div>
           </div>

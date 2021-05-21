@@ -6,7 +6,7 @@ const Tech = () => {
   return (
     <div className="main-tech-container">
      
-      <h2 className="header-title">Skills and the tech I use</h2>
+      <h2 className="header-title"><span className="funky-underline">Skills</span> and the tech I use</h2>
       <div className="tech-container">
         <aside className="tech-logos">
           <ul>
@@ -42,7 +42,7 @@ const Tech = () => {
 
           </ul>
         </aside>
-        <p className="tech-para">These are the tools and languages worked with so far. I am excited to learn new languages and have started on Gatsby and Next.js already.</p>
+        <p className="tech-para">These are the tools and languages I&#39;ve worked with so far. I&#39;m excited to add more languages to my tech stack and am currently learning Gatsby.</p>
       </div>
     </div>
     

@@ -8,52 +8,36 @@ import Experience from './Experience'
 // import { FiChevronsDown } from 'react-icons/fi'
 import Footer from './Footer'
 import Contact from './Contact'
-// import Popup from 'reactjs-popup'
+
 
 
 
 const Home = () => {
-  // const overlayStyle = { background: 'rgba(0,0,0,0.5)' }
+
 
   return (
     <>
       <main>
         
         <div className="hero-section">
-          <Navbar />
-          {/* <Popup 
-            trigger={<button className="button">Menu</button>}
-            modal
-            overlayStyle={overlayStyle}
-          >
-            {close => (
-              <>
-                <button className="close" onClick={close}>
-            &times;
-                </button>
-                <div className="content">
-                  <p>About</p>
-                  <p>Projects</p>
-                  <p>Tech</p>
-                </div>
-              </>
-            )}
-          </Popup> */}
-    
-         
-          <div>
-            <div id="hero" className="hero-text">
-              <h1 className="title">HANNAH TINACCI</h1>
-              <h2>A London-based <span className="bio-highlight">full-stack developer</span>, previously in educational publishing, looking for a role in an <span className="bio-highlight">impact-oriented company</span></h2>
-            </div>
-            <div className="hero-arrow-down">
-              {/* <a href="#about" ><FiChevronsDown /></a> */}
-              <div className="mouse-container">
+          <div className="ui container">
+            <Navbar />
+            <div >
+              
+              <div id="hero" className="hero-text">
+                <h1>HANNAH TINACCI</h1>
+                <h2>A London-based <span className="bio-highlight">full-stack developer</span>, previously in educational publishing, looking for a role in an <span className="bio-highlight">impact-oriented company</span></h2>
+              </div>
+             
+              <div className="hero-arrow-down">
+              
+                <div className="mouse-container">
 
-                <div className="mouse">
-                  {/* <p>Scroll</p> */}
+                  <div className="mouse"></div>
+                  <a href="#about" ><p>Find out more</p></a>
+                
                 </div>
-
+                {/* <a href="#about" ><FiChevronsDown /></a> */}
               </div>
             </div>
           </div>
