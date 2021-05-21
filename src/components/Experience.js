@@ -14,7 +14,7 @@ const Experience = () => {
         was fully remote so I utilised Zoom and Slack for daily stand-ups, lessons, labs, pair-coding and
         project work. You can jump back to view my projects again by clicking <a className="project-link" href="#projects">here</a>.
       </p>
-      
+      <br/>
       <h3>Managing Editor, Macmillan Education Ltd, London</h3>
       <h4>December 2015 – January 2021</h4>
       <ul>

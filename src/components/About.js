@@ -20,6 +20,7 @@ const About = () => {
         <h2 className="header-title"><span className="funky-underline">A bit more about me</span> and Things I l<Heart color="#ff6666"/>ve</h2>
         <p className="interests"> Yoga – Hand-balancing and inversions – Coffee – Finn – Cat-person – Music – Pastries – Crime dramas – Business autobiographies – Podcasts – Epic sunsets</p>
       </div>
+      <br/>
     </div>
   )
 }

@@ -17,7 +17,7 @@ body, html {
   height: 100vh;
   scroll-behavior: smooth;
   margin: 0;
-  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  // font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 
@@ -31,6 +31,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   text-align: center;
   color: #1f0322;
+  // font-size: 1.4em;
 }
 
 h3, h4, a, p, ul, li {
@@ -338,7 +339,7 @@ $animDuration: infinite;
 
 // About 
 .about-container {
-  // height: 50vh;
+  // height: 100vh;
  
   h2 {
     padding-top: 7vh;
@@ -357,7 +358,7 @@ $animDuration: infinite;
 .header-title {
   // font-family: 'Poppins', sans-serif;
   font-family: 'Montserrat', sans-serif;
-  
+  font-size: 2em;
 	
   
   
@@ -396,6 +397,7 @@ $animDuration: infinite;
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-weight: bold;
+    font-size: 1.5em;
   }
 }
 .readme-link {
@@ -536,8 +538,22 @@ $animDuration: infinite;
     color: #818aa3;
 
   }
-  h3, h4 {
+  h3 {
     font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+
+  h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+  }
+  p {
+    font-size: 1.3em;
+  }
+  li {
+    font-size: 1.3em;
+    line-height: 1.5em;
   }
 }
 
