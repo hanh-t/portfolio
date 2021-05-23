@@ -11,19 +11,19 @@ const Navbar = () => {
         <div className="ui top fixed menu nav-bgd">
           <div className="right menu">
             <AnchorLink href="#home">
-              <p>Home</p>
+              <p className="nav-text">Home</p>
             </AnchorLink>
             <AnchorLink href="#about">
-              <p>About</p>
+              <p className="nav-text">About</p>
             </AnchorLink>
             <AnchorLink href="#tech">
-              <p>Tech</p>
+              <p className="nav-text">Tech</p>
             </AnchorLink>
             <AnchorLink href="#projects">
-              <p>Projects</p>
+              <p className="nav-text">Projects</p>
             </AnchorLink>
             <AnchorLink href="#contact">
-              <p>Contact</p>
+              <p className="nav-text">Contact</p>
             </AnchorLink>
           </div>
         </div>

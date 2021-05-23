@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 #root {
   height: 100vh;
@@ -75,6 +75,9 @@ a {
   }
 }
 
+.nav-text {
+  font-size: 1em;
+}
 // #1f0322
 // 587792
 
@@ -109,7 +112,7 @@ a {
     color: #1f0322;
     // font-family: 'Quicksand', sans-serif;
     // font-family: 'Julius Sans One', sans-serif;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     
   }
   h2 {
