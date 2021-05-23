@@ -7,6 +7,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 
 #root {
   height: 100vh;
@@ -46,16 +48,6 @@ a {
 
 
 
-#nav {
-  display: flex;
-  justify-content: flex-end;
-  a {
-    padding: 1vh 1vw;
-    text-decoration: none;
-    color: #f1e9db;
-    
-  }
-}
 
 .ui.top.fixed.menu.nav-bgd {
   background: #1f0322;
@@ -73,6 +65,14 @@ a {
   //     background-position: 0% 50%;
   //   }
   // }
+  display: flex;
+  justify-content: flex-end;
+  a {
+    padding: 1vh 1vw;
+    text-decoration: none;
+    color: #f1e9db;
+    
+  }
 }
 
 // #1f0322
@@ -105,9 +105,11 @@ a {
   align-items: center;
   height: 60vh;
   h1 {
-    font-size: 6em;
+    font-size: 5em;
     color: #1f0322;
-    font-family: 'Quicksand', sans-serif;
+    // font-family: 'Quicksand', sans-serif;
+    // font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     
   }
   h2 {
