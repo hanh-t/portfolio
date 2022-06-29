@@ -41,7 +41,7 @@ const Projects = () => {
                   {/* <div data-src={p4Purchase} /> */}
                 </AwesomeSlider>
         
-                <p className="project-info">My final, solo project at General Assembly and a full-stack app built using Python, Django REST Framework, React Hooks and a PostgreSQL database, with CRUD functionality. It is an interactive habit-tracker with a social aspect, built in one week.</p>
+                <p className="project-info">My final, solo project at General Assembly was a full-stack app built using Python, Django REST Framework, React Hooks and a PostgreSQL database, with CRUD functionality. It is an interactive habit-tracker with a social aspect, built in one week.</p>
                 <div className="ui container">
                   <div className="project-tech">
                     <ul>
